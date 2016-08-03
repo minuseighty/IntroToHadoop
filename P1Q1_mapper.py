@@ -1,5 +1,3 @@
-#!/usr/bin/python
-
 # Instead of breaking the sales down by store, instead give us a sales breakdown by product category across all of our stores.
 
 # Format of each line is:
