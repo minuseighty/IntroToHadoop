@@ -16,13 +16,13 @@ for line in sys.stdin:
 
     thisKey, thisSale = data_mapped  # key = item and value = cost
 
-    if oldKey and oldKey != thisKey:
+    if oldKey and oldKey != thisKey:  # reset count when the item changes
         print oldKey, "\t", salesTotal
         oldKey = thisKey;
         salesTotal = 0
 
     oldKey = thisKey
-    salesTotal += float(thisSale)
+    salesTotal += float(thisSale)  # add the cost for each sale
 
 if oldKey != None:
-    print oldKey, "\t", salesTotal
+    print oldKey, "\t", salesTotal  # print item and sales total
